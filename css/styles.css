@@ -70,7 +70,7 @@ body {
         display: none; 
       }
       
-      li > crossOutButton {
+      li > xOutButton {
         background: none;
         border: none;
         float: right;

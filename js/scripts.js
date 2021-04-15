@@ -18,10 +18,10 @@ function newItem(){
     });
 
   //The "X" button and deleting list item
-  let crossOutButton = $('<crossOutButton></crossOutButton>');
-li.append(crossOutButton);
-crossOutButton.append(document.createTextNode('X'));
-crossOutButton.on('click', function(){
+  let xOutButton = $('<xOutButton></xOutButton>');
+li.append(xOutButton);
+xOutButton.append(document.createTextNode('X'));
+xOutButton.on('click', function(){
   li.addClass('delete');
 });
 
