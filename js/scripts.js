@@ -10,6 +10,7 @@ function newItem() {
   }
   else {
     $('#list').append(li);
+    $('#input').val('')
   }
 
   //striking the items that are done
@@ -21,10 +22,12 @@ function newItem() {
   let xOutButton = $('<xOutButton></xOutButton>');
   li.append(xOutButton);
   xOutButton.append(document.createTextNode('X'));
-  xOutButton.on('click', function () {
-    li.addClass('delete');
-  });
+  xOutButton.on('click', deleteListItem); 
+  function deleteListItem(){
+    li.remove();
+  };
 
   //move list items
   $('#list').sortable();
 }
+
